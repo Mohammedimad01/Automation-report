@@ -11,8 +11,8 @@ def run_full_pipeline():
     summary, r, c, m = analyze(df)
     generate_report(summary, r, c, m)
 
-# Run every Monday at 8:20 PM
-schedule.every().monday.at("20:20").do(run_full_pipeline)
+# Run every Monday at 9:00 AM
+schedule.every().monday.at("09:00").do(run_full_pipeline)
 
 print("Scheduler running. Press Ctrl+C to stop.")
 while True:
